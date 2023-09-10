@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Footer-block
+---------------------------------------------------------------*/
+footer {
+    padding: 60px 0 50px;
+    border-radius: 20px;
+    
+    @include sm-devices {
+        padding: 80px 0 70px;
+    }
+    @include lg-devices {
+        padding: 90px 0 110px;
+        border-radius: 50px;
+    }
+    @include xl-devices {
+        padding: 110px 0 130px;
+    }
+    .brand-logo {
+        max-width: 175px;
+        margin: 0 auto;
+
+        @include sm-devices {
+            max-width: 200px;
+        }
+        @include lg-devices {
+            max-width: 300px;
+        }
+    }
+    ul {
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 15px;
+        
+        @include sm-devices {
+            gap: 0 30px;
+        }
+        @include lg-devices {
+            margin: 25px 0 45px;
+        }
+
+        li {
+            a {
+                color: #fff;
+                font-weight: 400;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                @include xsm-devices {
+                    font-size: 16px;
+                }
+                @include sm-devices {
+                    font-size: 18px;
+                }
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 12px;
+
+        @include sm-devices {
+            font-size: 16px;
+        }
+    }
+}

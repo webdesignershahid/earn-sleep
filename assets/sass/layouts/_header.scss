@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1024;
+    transition: all 0.3s ease-in-out;
+    padding: 20px 0;
+
+    @include lg-devices {
+        padding: 30px 0;
+    }
+    @include xl-devices {
+        padding: 40px 0;
+    }
+
+    .navbar-brand {
+        max-width: 100px;
+        margin: 0;
+        @include xsm-devices {
+            max-width: 150px;
+        }
+        @include md-devices {
+            max-width: 200px;
+        }
+        @include lg-devices {
+            max-width: 230px;
+        }
+    }
+
+    &.sticky {
+        background-color: var(--color__white);
+        box-shadow: 0 0 6px 0 rgba(#357FFF, 0.1);
+        padding: 10px 0;
+    }
+
+    .nav {
+        gap: 0 10px;
+        @include md-devices {
+            gap: 0 15px;
+        }
+    }
+    .btn-primary {
+        padding: 12px 16px;
+        font-size: 10px;
+        border-radius: 8px;
+        
+        @include sm-devices {
+            font-size: 12px;
+        }
+        @include md-devices {
+            font-size: 14px;
+            padding: 14px 20px;
+        }
+        @include lg-devices {
+            font-size: 16px;
+            padding: 17px 20px;
+            border-radius: 14px;
+        }
+    }
+    .btn-bulk-doc {
+        background-color: #fff;
+        border-radius: 50%;
+        @include width-height(40px, 40px);
+        box-shadow: 0px 5px 66px rgba(96, 90, 74, 0.44);
+
+        @include sm-devices {
+            @include width-height(45px, 45px);
+        }
+        @include md-devices {
+            @include width-height(50px, 50px);
+        }
+        @include lg-devices {
+            @include width-height(54px, 54px);
+        }
+    }
+}

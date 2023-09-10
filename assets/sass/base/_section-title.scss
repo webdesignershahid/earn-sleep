@@ -1,0 +1,30 @@
+.section-title {
+    margin-bottom: 45px;
+    h1 {
+        font-family: var(--font-tt_octosquares_cond_xb);
+        font-size: 32px;
+        color: #080B3B;
+
+        @include sm-devices {
+            font-size: 44px;
+        }
+        @include lg-devices {
+            font-size: 54px;
+        }
+        @include xl-devices {
+            font-size: 60px;
+        }
+        svg {
+            width: 50px;
+            @include max-xsm {
+                display: none;
+            }
+            @include md-devices {
+                width: 72px;
+            }
+        }
+    }
+    .icon {
+        transform: rotate(18deg);
+    }
+}
